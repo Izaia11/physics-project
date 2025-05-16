@@ -19,6 +19,13 @@
       padding: 1.5rem;
       text-align: center;
     }
+    header img {
+      width: 70px;
+      height: auto;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
     nav {
       display: flex;
       justify-content: center;
@@ -69,10 +76,16 @@
       text-align: center;
       padding: 1rem;
     }
+    img.full {
+      width: 100%;
+      border-radius: 10px;
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="download.jpg" alt="Solar Logo">
     <h1>Solar Smart Roads</h1>
     <p>Using Physics to Power a Cleaner, Smarter World</p>
   </header>
@@ -96,6 +109,8 @@
     <div class="card">
       <p>Modern roads are outdated and constantly breaking. What if we built roads from ultra-durable solar materials that don't just last longer—but also power vehicles directly through contact with their tires?</p>
       <p>Using embedded weight sensors, energy would only be transferred when a vehicle is present. It’s time we reimagine transport—cleaner, faster, and friendlier.</p>
+      <img src="download.jpg" alt="Solar Road Image" class="full">
+      <img src="download.jpg" alt="Solar Car Image" class="full">
     </div>
   </section>
 
@@ -104,10 +119,15 @@
     <div class="card">
       <ul>
         <li><strong>Photovoltaic Effect:</strong> Converts sunlight to electricity with solar panels.</li>
-        <li><strong>Friction + Induction:</strong> Vehicles draw power through contact and electromagnetic fields.</li>
-        <li><strong>Sensors:</strong> Piezoelectric strain sensors detect vehicle presence and trigger energy release.</li>
-        <li><strong>Efficiency:</strong> One 10m² road panel can generate up to 11kWh/day in sunny regions.</li>
+        <li><strong>Friction + Induction:</strong> As tires spin and make contact, energy is transferred using electromagnetic induction coils embedded in the road.</li>
+        <li><strong>Sensors:</strong> Pressure sensors detect a car’s weight and activate the energy transfer module.</li>
       </ul>
+      <h3>Example Calculation:</h3>
+      <p><strong>Solar Energy Collected:</strong></p>
+      <p>Assume a 1m² solar panel road segment receives 5.5 kWh/day (average in sunny climates).</p>
+      <p>If a 1 km stretch = 1000 m², total daily energy collected = <strong>5.5 kWh × 1000 = 5500 kWh</strong>.</p>
+      <p>Average electric car consumes ~0.2 kWh/km. If each car travels 20 km/day, it uses 4 kWh/day.</p>
+      <p>Thus, 5500 kWh / 4 kWh = <strong>~1375 cars can be powered daily</strong>.</p>
     </div>
   </section>
 
@@ -126,33 +146,10 @@
   <section id="data">
     <h2>Data + Visuals</h2>
     <div class="card">
-      <p><strong>Energy Potential:</strong> 1 km of solar road could power 750 vehicles daily (assuming 20km/day each).</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Solar_Roadway_Prototype.jpg/640px-Solar_Roadway_Prototype.jpg" alt="Solar Road Prototype" width="100%" style="border-radius: 10px;">
+      <p><strong>Energy Potential:</strong> 1 km of solar road could power 750–1375 vehicles daily depending on solar input and driving distance.</p>
+      <img src="download.jpg" alt="Solar Road Prototype" class="full">
+      <img src="download.jpg" alt="Futuristic Solar Vehicle" class="full">
       <p><strong>Visuals to Include:</strong></p>
       <ul>
         <li>Cross-section diagram of road & tire energy transfer</li>
         <li>Infographic comparing traditional vs. smart roads</li>
-        <li>Solar irradiance heat map (e.g., from NREL)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="sources">
-    <h2>Works Cited</h2>
-    <div class="card">
-      <ul>
-        <li>ASCE. Report Card for America’s Infrastructure. <a href="https://infrastructurereportcard.org" target="_blank">infrastructurereportcard.org</a></li>
-        <li>Fraunhofer ISE. “Photovoltaics Report.” <a href="https://ise.fraunhofer.de" target="_blank">ise.fraunhofer.de</a></li>
-        <li>Wattway. <a href="https://www.wattwaybycolas.com/en/" target="_blank">wattwaybycolas.com</a></li>
-        <li>Solar Roadways. <a href="https://www.solarroadways.com" target="_blank">solarroadways.com</a></li>
-        <li>NREL Solar Data. <a href="https://www.nrel.gov" target="_blank">nrel.gov</a></li>
-        <li>Tesla Vehicle Specs. <a href="https://www.tesla.com" target="_blank">tesla.com</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <p>Built with Physics, Passion, and Purpose 🚀 | Grade 11 Physics Project</p>
-  </footer>
-</body>
-</html>
