@@ -18,13 +18,14 @@
       color: white;
       padding: 1.5rem;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
     header img {
-      width: 70px;
-      height: auto;
-      position: absolute;
-      top: 10px;
-      left: 10px;
+      width: 50px;
+      height: 50px;
     }
     nav {
       display: flex;
@@ -70,24 +71,26 @@
       margin: 2rem 0;
       padding: 1.5rem;
     }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
     footer {
       background-color: #00796b;
       color: white;
       text-align: center;
       padding: 1rem;
     }
-    img.full {
-      width: 100%;
-      border-radius: 10px;
-      margin: 1rem 0;
-    }
   </style>
 </head>
 <body>
   <header>
-    <img src="download.jpg" alt="Solar Logo">
-    <h1>Solar Smart Roads</h1>
-    <p>Using Physics to Power a Cleaner, Smarter World</p>
+    <img src="/mnt/data/download.jpg" alt="Logo">
+    <div>
+      <h1>Solar Smart Roads</h1>
+      <p>Using Physics to Power a Cleaner, Smarter World</p>
+    </div>
   </header>
   
   <nav>
@@ -109,25 +112,21 @@
     <div class="card">
       <p>Modern roads are outdated and constantly breaking. What if we built roads from ultra-durable solar materials that don't just last longer—but also power vehicles directly through contact with their tires?</p>
       <p>Using embedded weight sensors, energy would only be transferred when a vehicle is present. It’s time we reimagine transport—cleaner, faster, and friendlier.</p>
-      <img src="download.jpg" alt="Solar Road Image" class="full">
-      <img src="download.jpg" alt="Solar Car Image" class="full">
+      <img src="/mnt/data/download-1.jpg" alt="Solar Road">
     </div>
   </section>
 
   <section id="physics">
     <h2>The Physics Behind It</h2>
     <div class="card">
-      <ul>
-        <li><strong>Photovoltaic Effect:</strong> Converts sunlight to electricity with solar panels.</li>
-        <li><strong>Friction + Induction:</strong> As tires spin and make contact, energy is transferred using electromagnetic induction coils embedded in the road.</li>
-        <li><strong>Sensors:</strong> Pressure sensors detect a car’s weight and activate the energy transfer module.</li>
-      </ul>
-      <h3>Example Calculation:</h3>
-      <p><strong>Solar Energy Collected:</strong></p>
-      <p>Assume a 1m² solar panel road segment receives 5.5 kWh/day (average in sunny climates).</p>
-      <p>If a 1 km stretch = 1000 m², total daily energy collected = <strong>5.5 kWh × 1000 = 5500 kWh</strong>.</p>
-      <p>Average electric car consumes ~0.2 kWh/km. If each car travels 20 km/day, it uses 4 kWh/day.</p>
-      <p>Thus, 5500 kWh / 4 kWh = <strong>~1375 cars can be powered daily</strong>.</p>
+      <p><strong>Photovoltaic Effect:</strong> Solar panels absorb sunlight and convert it to electricity via the photovoltaic effect using semiconductor materials (e.g., silicon).</p>
+      <p><strong>Energy Transfer:</strong> When a car is detected, electrical energy stored in the road is transmitted to the tires using inductive coupling (like wireless charging pads).</p>
+      <p><strong>Frictional Motion & Energy:</strong> The energy transfer can be modeled using P = F * v, where F is the force of friction and v is the vehicle speed. Assuming a tire-road contact force of 150 N and a speed of 20 m/s:</p>
+      <pre>P = 150 N × 20 m/s = 3000 Watts (or 3 kW per vehicle at peak efficiency)</pre>
+      <p><strong>Daily Output:</strong> If a 100-meter stretch collects 8 kWh/m²/day and is 3 m wide:</p>
+      <pre>Total Energy = 100 m × 3 m × 8 kWh = 2400 kWh/day</pre>
+      <p>That could power <strong>hundreds of electric vehicles</strong> daily depending on usage patterns.</p>
+      <img src="/mnt/data/download-2.jpg" alt="Solar Car">
     </div>
   </section>
 
@@ -146,10 +145,33 @@
   <section id="data">
     <h2>Data + Visuals</h2>
     <div class="card">
-      <p><strong>Energy Potential:</strong> 1 km of solar road could power 750–1375 vehicles daily depending on solar input and driving distance.</p>
-      <img src="download.jpg" alt="Solar Road Prototype" class="full">
-      <img src="download.jpg" alt="Futuristic Solar Vehicle" class="full">
+      <p><strong>Energy Potential:</strong> 1 km of solar road could power 750 vehicles daily (assuming 20km/day each).</p>
+      <img src="/mnt/data/download-1.jpg" alt="Solar Road Prototype">
       <p><strong>Visuals to Include:</strong></p>
       <ul>
         <li>Cross-section diagram of road & tire energy transfer</li>
         <li>Infographic comparing traditional vs. smart roads</li>
+        <li>Solar irradiance heat map (e.g., from NREL)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sources">
+    <h2>Works Cited</h2>
+    <div class="card">
+      <ul>
+        <li>ASCE. Report Card for America’s Infrastructure. <a href="https://infrastructurereportcard.org" target="_blank">infrastructurereportcard.org</a></li>
+        <li>Fraunhofer ISE. “Photovoltaics Report.” <a href="https://ise.fraunhofer.de" target="_blank">ise.fraunhofer.de</a></li>
+        <li>Wattway. <a href="https://www.wattwaybycolas.com/en/" target="_blank">wattwaybycolas.com</a></li>
+        <li>Solar Roadways. <a href="https://www.solarroadways.com" target="_blank">solarroadways.com</a></li>
+        <li>NREL Solar Data. <a href="https://www.nrel.gov" target="_blank">nrel.gov</a></li>
+        <li>Tesla Vehicle Specs. <a href="https://www.tesla.com" target="_blank">tesla.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built with Physics, Passion, and Purpose 🚀 | Grade 11 Physics Project</p>
+  </footer>
+</body>
+</html>
